@@ -147,7 +147,7 @@ function TouristDestination() {
 
         {/* --- ẢNH BANNER TRUNG TÂM --- */}
         <img
-          src="/public/bgTanLoc.png"
+          src="/bgTanLoc.png"
           alt="Ngày hội Trái Cây Phường Tân Lộc"
           className="banner-img"
         />
