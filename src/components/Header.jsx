@@ -57,7 +57,7 @@ function Header() {
               textAlign: 'center',
             }}
           >
-            Tân Lộc Tourism
+            Hành Trình Du Lịch Tân Lộc
             <span
               style={{
                 position: 'absolute',
@@ -89,7 +89,7 @@ function Header() {
           >
             <li>
               <NavLink
-                to="/ban-do"
+                to="/"
                 style={({ isActive }) => ({
                   textDecoration: 'none',
                   fontSize: isMobile ? '0.95rem' : '1rem',
@@ -107,7 +107,7 @@ function Header() {
 
             <li>
               <NavLink
-                to="/dia-diem"
+                to="/hanh-trinh"
                 style={({ isActive }) => ({
                   textDecoration: 'none',
                   fontSize: isMobile ? '0.95rem' : '1rem',
@@ -119,43 +119,7 @@ function Header() {
                   borderBottom: isActive ? '3px solid #006d5b' : '3px solid transparent',
                 })}
               >
-                Địa Điểm
-              </NavLink>
-            </li>
-
-            {/* <li>
-              <NavLink
-                to="/ban-do"   // ← sửa nếu cần
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  fontSize: isMobile ? '0.95rem' : '1rem',
-                  fontWeight: 600,
-                  color: isActive ? '#006d5b' : '#333',
-                  padding: '0.35rem 0',
-                  position: 'relative',
-                  transition: 'all 0.3s ease',
-                  borderBottom: isActive ? '3px solid #006d5b' : '3px solid transparent',
-                })}
-              >
-                Bản Đồ
-              </NavLink>
-            </li> */}
-
-            <li>
-              <NavLink
-                to="/lien-he"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  fontSize: isMobile ? '0.95rem' : '1rem',
-                  fontWeight: 600,
-                  color: isActive ? '#006d5b' : '#333',
-                  padding: '0.35rem 0',
-                  position: 'relative',
-                  transition: 'all 0.3s ease',
-                  borderBottom: isActive ? '3px solid #006d5b' : '3px solid transparent',
-                })}
-              >
-                Liên Hệ
+                Hành Trình
               </NavLink>
             </li>
           </ul>

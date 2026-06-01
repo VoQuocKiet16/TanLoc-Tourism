@@ -29,8 +29,8 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/dia-diem" element={<TouristDestination />} />
-          <Route path="/ban-do" element={<TourismMap />} />
+          <Route path="/hanh-trinh" element={<TouristDestination />} />
+          <Route path="/" element={<TourismMap />} />
           <Route path="/lien-he" element={<Contact />} />
         </Routes>
       </main>
