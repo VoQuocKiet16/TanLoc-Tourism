@@ -67,21 +67,21 @@ function TouristDestination() {
       id: 1,
       name: "Nhà cổ Ông Trần Bá Thế",
       description: "Nhà Cổ Ông Trần Bá Thế là một trong những ngôi nhà cổ tiêu biểu của Tân Lộc, mang đậm kiến trúc Nam Bộ xưa. Công trình lưu giữ nhiều giá trị văn hóa, lịch sử và phản ánh đời sống của tầng lớp điền chủ miền Tây đầu thế kỷ XX.",
-      image: "/public/nha-co-ong-tran-ba-the.jpg",
+      image: "/nha-co-ong-tran-ba-the.jpg",
       hot: true,
     },
     {
       id: 2,
       name: "Vườn Dừa Tân Lộc",
       description: "Vườn Dừa Tân Lộc nổi bật với không gian xanh mát, đậm chất miền Tây sông nước. Du khách có thể tham quan, chụp ảnh và trải nghiệm nét đẹp bình dị của vùng cù lao Tân Lộc.",
-      image: "/public/vuon-dua.jpg",
+      image: "/vuon-dua.jpg",
       hot: true,
     },
     {
       id: 3,
       name: "Đình Thần Tân Lộc Đông",
       description: "Đình Thần Tân Lộc Đông là công trình tín ngưỡng lâu đời, gắn liền với lịch sử hình thành và phát triển của địa phương. Đây là nơi diễn ra nhiều lễ hội truyền thống và sinh hoạt văn hóa cộng đồng.",
-      image: "/public/dinh-tan-loc-dong.jpg",
+      image: "/dinh-tan-loc-dong.jpg",
       hot: true,
     },
   ];
@@ -119,7 +119,7 @@ function TouristDestination() {
         <div style={{
           position: 'absolute',
           top: -20, left: -20, right: -20, bottom: -20,
-          backgroundImage: 'url("/public/bgTanLoc.png")',
+          backgroundImage: 'url("/bgTanLoc.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'blur(20px)',

@@ -57,7 +57,7 @@ function Header() {
               textAlign: 'center',
             }}
           >
-            Hành Trình Du Lịch Tân Lộc
+           Khám Phá Tân Lộc
             <span
               style={{
                 position: 'absolute',
