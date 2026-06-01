@@ -44,47 +44,6 @@ body {
   margin: 0 auto;
 }
 
-/* ==================== HEADER ==================== */
-/* .header {
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo h2 {
-  color: var(--primary);
-  font-size: 1.85rem;
-  font-weight: 700;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2.8rem;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--primary);
-} */
 
 .header {
   position: sticky;

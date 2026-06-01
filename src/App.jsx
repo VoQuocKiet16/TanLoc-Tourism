@@ -1,38 +1,42 @@
 import Header from './components/Header'
-import TourismMap from './components/TourismMap'
 import Footer from './components/Footer'
+import TourismMap from './components/TourismMap'
+import TouristDestination from './components/TouristDestination'
 
+import { Routes, Route } from 'react-router-dom'
+
+function Home() {
+  return <h1>Trang Chủ</h1>
+}
+
+function Contact() {
+  return <h1>Liên Hệ</h1>
+}
 function App() {
   return (
-    <div className="app">
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column'
+      }}
+    >
       <Header />
 
-      <main>
-        {/* <section className="hero">
-          <div className="hero-overlay">
-            <h1>Bản Đồ Du Lịch Phường Tân Lộc</h1>
-            <p>
-              Khám phá các địa điểm du lịch, văn hóa và trải nghiệm đặc sắc tại
-              phường Tân Lộc, TP Cần Thơ.
-            </p>
-          </div>
-        </section> */}
-
-        <section className="map-section">
-          {/* <div className="section-title">
-            <h2>Khám Phá Bản Đồ Du Lịch</h2>
-            <p>
-              Xem chi tiết các địa điểm nổi bật và chỉ đường trực tiếp bằng Google Maps.
-            </p>
-          </div> */}
-
-          <TourismMap />
-        </section>
+      <main
+        style={{
+          flex: 1
+        }}
+      >
+        <Routes>
+          <Route path="/hanh-trinh" element={<TouristDestination />} />
+          <Route path="/" element={<TourismMap />} />
+          <Route path="/lien-he" element={<Contact />} />
+        </Routes>
       </main>
 
       <Footer />
     </div>
   )
 }
-
 export default App
