@@ -88,21 +88,62 @@ function TouristDestination() {
 
   const schedules = [
     {
-      date: "18/06",
+      date: "19/06/2026",
       activities: [
-        "Lễ khai mạc Ngày hội Trái cây",
-        "Diễu hành quảng bá du lịch",
-        "Trưng bày trái cây đặc sản",
-        "Biểu diễn đờn ca tài tử",
-      ],
-    },
-    {
-      date: "19/06",
-      activities: [
-        "Hội thi tạo hình nghệ thuật từ trái cây",
-        "Trò chơi dân gian",
-        "Hội thi ẩm thực",
-        "Lễ bế mạc",
+        {
+          time: "08 giờ 00 phút, ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: "Lễ Khai mạc Ngày hội",
+          location:
+            "Nhà khách Di tích Lịch sử - Văn hóa Đình Tân Lộc Đông, khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: "Chương trình văn nghệ tổng hợp",
+          location:
+            "Nhà khách Di tích Lịch sử - Văn hóa Đình Tân Lộc Đông, khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: 'Quảng bá du lịch, trưng bày sản phẩm OCOP và "Cây củ quả lạ"',
+          location:
+            "Sân Trường THCS và THPT Tân Lộc (điểm lẻ), khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: "Quảng bá Chuyển đổi số, viễn thông và Hàng Việt về nông thôn",
+          location:
+            "Sân Trường THCS và THPT Tân Lộc (điểm lẻ), khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: 'Gian hàng bánh dân gian và hội thi "Trang trí gian hàng đẹp"',
+          location:
+            "Sân Trường THCS và THPT Tân Lộc (điểm lẻ), khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: 'Hội thi "Trang trí, tạo hình trái cây nghệ thuật"',
+          location:
+            "Sân Trường THCS và THPT Tân Lộc (điểm lẻ), khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: 'Hội thi "Trang trí nón lá và nón cói"',
+          location:
+            "Sân Trường THCS và THPT Tân Lộc (điểm lẻ), khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "Ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: "Hoạt động trò chơi dân gian",
+          location:
+            "Sân Di tích Lịch sử - Văn hóa Đình Tân Lộc Đông, khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
+        {
+          time: "16 giờ 00 phút, ngày 19/6/2026 (nhằm ngày 05/5 âl)",
+          title: "Tổng kết và Bế mạc Ngày hội",
+          location:
+            "Nhà khách Di tích Lịch sử - Văn hóa Đình Tân Lộc Đông, khu vực Tân Mỹ 1, phường Tân Lộc, thành phố Cần Thơ",
+        },
       ],
     },
   ];
@@ -341,21 +382,57 @@ function TouristDestination() {
                   Ngày {day.date}
                 </h3>
 
-                <ul style={{ paddingLeft: '8px' }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                  }}
+                >
                   {day.activities.map((activity, i) => (
-                    <li
+                    <div
                       key={i}
                       style={{
-                        marginBottom: '14px',
-                        fontSize: '1.05rem',
-                        color: '#334155',
-                        lineHeight: '1.65',
+                        padding: "16px",
+                        background: "#f8fafc",
+                        borderRadius: "12px",
+                        borderLeft: "4px solid #16a34a",
                       }}
                     >
-                      {activity}
-                    </li>
+                      <div
+                        style={{
+                          color: "#16a34a",
+                          fontWeight: 700,
+                          marginBottom: "8px",
+                          fontSize: "0.95rem",
+                        }}
+                      >
+                        {activity.time}
+                      </div>
+
+                      <div
+                        style={{
+                          fontSize: "1.1rem",
+                          fontWeight: 600,
+                          color: "#0f172a",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        {activity.title}
+                      </div>
+
+                      <div
+                        style={{
+                          color: "#64748b",
+                          lineHeight: 1.6,
+                          fontSize: "0.95rem",
+                        }}
+                      >
+                        📍 {activity.location}
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
